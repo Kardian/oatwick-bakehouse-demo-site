@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact and pre-order · Oatwick Bakehouse</title>
+<meta name="description" content="Opening hours, address and Saturday pre-order form for Oatwick Bakehouse.">
+<meta name="theme-color" content="#23412f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<p class="demo-bar">Demo website for a fictional bakery. Not a real business.</p>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="index.html" aria-label="Oatwick Bakehouse, home"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+<ellipse cx="24" cy="27" rx="20" ry="15" fill="currentColor"/>
+<path d="M13 22c4-4 8-5 11-5M20 30c5-6 10-8 15-8" stroke="var(--flour)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+</svg><span class="brand-name">Oatwick<small>Bakehouse</small></span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="story.html">Our story</a></li><li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+<a class="btn btn-small" href="contact.html#preorder">Pre-order for Saturday</a>
+</div>
+</header>
+<main id="main">
+<section class="wrap page-head">
+<p class="eyebrow">Contact</p>
+<h1>Come by, or have a loaf kept for you.</h1>
+</section>
+<section class="wrap contact-grid">
+<div class="contact-info">
+<div class="address-card">
+<h2>Oatwick Bakehouse</h2>
+<p>14 Mercer Row<br>Fairhaven</p>
+<p>On the corner with the green door, two minutes from the train station.</p>
+<p><a href="tel:+15550142207">(555) 014-2207</a><br><a href="mailto:hello@oatwick.example">hello@oatwick.example</a></p>
+</div>
+<h2>Opening hours</h2>
+<dl class="hours big"><dt>Tuesday–Friday</dt><dd>7:00–15:00</dd><dt>Saturday</dt><dd>7:00–13:00</dd><dt>Sunday–Monday</dt><dd>Closed</dd></dl>
+<div class="ph " style="aspect-ratio:1600/900"><span>IMAGE: Inside the shop: bread shelves on a tiled wall, pastry case and two stools by the window</span></div>
+</div>
+<form id="preorder" class="preorder-form" action="mailto:hello@oatwick.example" method="post" enctype="text/plain">
+<h2>Pre-order for Saturday</h2>
+<p class="form-note">Orders close Thursday at 12:00. This demo form opens your email app with the order filled in; nothing is stored on a server.</p>
+<div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<fieldset class="field">
+<legend>What should we keep for you?</legend>
+<div class="qty"><label for="q-country">Country sourdough · $8</label><input id="q-country" name="country_sourdough" type="number" min="0" max="6" value="0" inputmode="numeric"></div>
+<div class="qty"><label for="q-rye">Seeded rye · $9</label><input id="q-rye" name="seeded_rye" type="number" min="0" max="6" value="0" inputmode="numeric"></div>
+<div class="qty"><label for="q-knot">Cardamom knots · $4</label><input id="q-knot" name="cardamom_knots" type="number" min="0" max="12" value="0" inputmode="numeric"></div>
+<div class="qty"><label for="q-crois">Butter croissants · $3.50</label><input id="q-crois" name="croissants" type="number" min="0" max="12" value="0" inputmode="numeric"></div>
+</fieldset>
+<div class="field"><label for="time">Pickup time</label><select id="time" name="pickup"><option>7:00–9:00</option><option>9:00–11:00</option><option>11:00–13:00</option></select></div>
+<div class="field"><label for="note">Anything else? <span class="opt">(optional)</span></label><textarea id="note" name="note" rows="3"></textarea></div>
+<button class="btn" type="submit">Send pre-order</button>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-grid">
+<div><p class="foot-brand">Oatwick Bakehouse</p><p>Sourdough, pastries and coffee on the corner of Mercer Row since 2019.</p></div>
+<div><h2 class="foot-h">Find us</h2><p>14 Mercer Row<br>Fairhaven</p><p><a href="tel:+15550142207">(555) 014-2207</a><br><a href="mailto:hello@oatwick.example">hello@oatwick.example</a></p></div>
+<div><h2 class="foot-h">Open</h2><dl class="hours"><dt>Tue–Fri</dt><dd>7:00–15:00</dd><dt>Sat</dt><dd>7:00–13:00</dd><dt>Sun–Mon</dt><dd>Closed</dd></dl></div>
+</div>
+<p class="wrap fineprint">Oatwick Bakehouse is a fictional business. This is a demo site; the address, phone and email are not real.</p>
+</footer>
+</body>
+</html>
